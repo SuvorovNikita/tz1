@@ -1,0 +1,9 @@
+@use '../main/variables';
+
+.main {
+  padding: 48px 54px;
+
+  @media (min-width: variables.$break-point-lg) {
+    padding: 96px 80px;
+  }
+}

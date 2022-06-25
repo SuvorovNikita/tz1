@@ -1,0 +1,17 @@
+@use '../mixins';
+@use '../main/variables';
+
+.button-reset {
+  @include mixins.typo-body-add;
+  border: none;
+  background: none;
+  padding: 0;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &__icon {
+    margin-left: 7px;
+  }
+}

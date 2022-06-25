@@ -1,0 +1,17 @@
+{
+  "name": "ya",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.6.2",
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "reseter.css": "^2.0.0"
+  }
+}

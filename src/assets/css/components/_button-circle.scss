@@ -1,0 +1,36 @@
+@use '../mixins';
+@use '../main/variables';
+
+.button-circle {
+  @include mixins.typo-body-lg;
+  background: variables.$color-white;
+  color: variables.$color-body;
+  border-radius: 100px;
+  border: none;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background: variables.$color-green;
+    box-shadow: variables.$color-green-shadow;
+    border-radius: 200px;
+    color: variables.$color-white;
+  }
+
+  &--active {
+    background: variables.$color-green;
+    box-shadow: variables.$color-green-shadow;
+    border-radius: 200px;
+    color: variables.$color-white;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    color: rgba(variables.$color-body, 0.2);
+  }
+}

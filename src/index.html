@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TZ</title>
+    <link rel="stylesheet" href="assets/css/index.scss" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__body">
+        <div class="container">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-19 col-lg-18">
+              <div class="card-list">
+                <div class="card-list__title">Квартиры</div>
+                <div class="card-list__body">
+                  <div class="d-block-lg">
+                    <table class="card-list__table">
+                      <thead>
+                        <tr>
+                          <th>Планировка</th>
+                          <th>Квартира</th>
+                          <th>m2</th>
+                          <th>Этаж</th>
+                          <th>Цена</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="card-product card-product--table">
+                          <td>
+                            <div class="card-product__image">
+                              <img src="assets/img/plan.svg" alt="" />
+                            </div>
+                          </td>
+                          <td>
+                            <div class="card-product__title">3-комнатная №104</div>
+                          </td>
+                          <td>
+                            <div class="card-product__data">63,1</div>
+                          </td>
+                          <td>
+                            <div class="card-product__data">
+                              2 <span class="card-product__data-gray">из 17</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="card-product__data">6 630 500</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="d-none-lg">
+                    <div class="card-list__filters">
+                      <div class="card-list__filter">m2</div>
+                      <div class="card-list__filter">Этаж</div>
+                      <div class="card-list__filter">Цена</div>
+                    </div>
+                    <div class="card-list__items">
+                      <div class="card-list__item">
+                        <div class="card-product card-product--list">
+                          <div class="card-product__body">
+                            <div class="card-product__title">3-комнатная №104</div>
+                            <div class="card-product__meta">
+                              <div class="card-product__data">63,1 м²</div>
+                              <div class="card-product__data">
+                                1 <span class="card-product__data-gray">из 17 этаж</span>
+                              </div>
+                              <div class="card-product__data">6 650 759 ₽</div>
+                            </div>
+                          </div>
+                          <div class="card-product__image">
+                            <img src="assets/img/plan.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-list__item">
+                        <div class="card-product card-product--list">
+                          <div class="card-product__body">
+                            <div class="card-product__title">3-комнатная №104</div>
+                            <div class="card-product__meta">
+                              <div class="card-product__data">63,1 м²</div>
+                              <div class="card-product__data">
+                                1 <span class="card-product__data-gray">из 17 этаж</span>
+                              </div>
+                              <div class="card-product__data">6 650 759 ₽</div>
+                            </div>
+                          </div>
+                          <div class="card-product__image">
+                            <img src="assets/img/plan.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-list__footer">
+                    <button class="button" type="button">Загрузить еще</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1 col-lg-2"></div>
+            <div class="col-12 col-lg-10">
+              <section class="section-builder">
+                <div class="card-filter">
+                  <div class="card-filter__inner">
+                    <div class="card-filter__row">
+                      <div class="filter-button">
+                        <div class="filter-button__item">
+                          <button class="button-circle">1к</button>
+                        </div>
+                        <div class="filter-button__item">
+                          <button class="button-circle button-circle--active">2к</button>
+                        </div>
+                        <div class="filter-button__item">
+                          <button class="button-circle">3к</button>
+                        </div>
+                        <div class="filter-button__item">
+                          <button class="button-circle button-circle--disabled">4к</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-filter__row">
+                      <div class="filter-range">
+                        <div class="filter-range__label">Стомость квартиры, ₽</div>
+                        <div class="filter-range__value">
+                          <div class="filter-range__left">
+                            <span class="filter-range__prefix">от</span>
+                            <span class="filter-range__left-value">5 500 000</span>
+                          </div>
+                          <div class="filter-range__right">
+                            <span class="filter-range__prefix">до</span>
+                            <span class="filter-range__right-value">18 900 000</span>
+                          </div>
+                        </div>
+                        <div class="filter-range__slider">
+                          <input
+                            class="filter-range__input"
+                            type="range"
+                            min="550000"
+                            max="1890000"
+                            value="550000"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-filter__row">
+                      <div class="filter-range">
+                        <div class="filter-range__label">Площадь, м²</div>
+                        <div class="filter-range__value">
+                          <div class="filter-range__left">
+                            <span class="filter-range__prefix">от</span>
+                            <span class="filter-range__left-value">33</span>
+                          </div>
+                          <div class="filter-range__right">
+                            <span class="filter-range__prefix">до</span>
+                            <span class="filter-range__right-value">123</span>
+                          </div>
+                        </div>
+                        <div class="filter-range__slider">
+                          <input type="range" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-filter__row">
+                      <div class="filter-reset">
+                        <button class="button-reset">
+                          Сбросить параметры
+                          <img
+                            class="button-reset__icon"
+                            src="assets/img/icon/close.svg"
+                            alt="reset"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

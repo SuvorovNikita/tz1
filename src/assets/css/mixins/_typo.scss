@@ -1,0 +1,36 @@
+@use '../main/variables';
+
+@mixin typo-h1 {
+  font-family: variables.$font-family-base;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+@mixin typo-body {
+  font-family: variables.$font-family-base;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@mixin typo-body-lg {
+  font-family: variables.$font-family-base;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin typo-body-small {
+  font-family: variables.$font-family-base;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+@mixin typo-body-add {
+  font-family: variables.$font-family-base;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}

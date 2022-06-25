@@ -1,0 +1,14 @@
+@use '../mixins';
+@use '../main/variables';
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  &__item {
+    margin-right: 16px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}

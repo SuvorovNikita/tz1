@@ -1,0 +1,23 @@
+@use '../mixins';
+@use '../main/variables';
+
+.button {
+  @include mixins.typo-body-small;
+  text-align: center;
+  padding: 8px 24px;
+  border: 1px solid rgba($color: variables.$color-body, $alpha: 0.2);
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover {
+    background-color: variables.$color-green;
+    color: variables.$color-white;
+    border: variables.$color-white;
+  }
+
+  &--opacity-bg {
+    background-color: transparent;
+    border: none;
+  }
+}

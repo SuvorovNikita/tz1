@@ -1,0 +1,49 @@
+@use 'variables';
+
+.container {
+  max-width: variables.$grid-point-md;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: variables.$break-point-lg) {
+    max-width: variables.$grid-point-lg;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+@for $i from 0 to variables.$grid-columns {
+  .col-#{$i + 1} {
+    flex: none;
+    width: calc(100% / variables.$grid-columns * ($i + 1));
+  }
+}
+
+@media (min-width: variables.$grid-point-lg) {
+  @for $i from 0 to variables.$grid-columns {
+    .col-lg-#{$i + 1} {
+      flex: none;
+      width: calc(100% / variables.$grid-columns * ($i + 1));
+    }
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block-lg {
+  display: none;
+
+  @media (min-width: variables.$grid-point-lg) {
+    display: block;
+  }
+}
+
+@media (min-width: variables.$grid-point-lg) {
+  .d-none-lg {
+    display: none;
+  }
+}

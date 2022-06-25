@@ -1,0 +1,42 @@
+@use '../mixins';
+@use '../main/variables';
+
+.filter-range {
+  &__label {
+    @include mixins.typo-body;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  &__value {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 6px;
+  }
+
+  &__left {
+    @include mixins.typo-body-lg;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    @include mixins.typo-body-lg;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__prefix {
+    @include mixins.typo-body-lg;
+    opacity: 0.5;
+    margin-right: 8px;
+  }
+
+  &__left-value,
+  &__right-value {
+    font-weight: 500;
+  }
+}

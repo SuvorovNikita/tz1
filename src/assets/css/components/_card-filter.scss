@@ -1,0 +1,20 @@
+@use '../mixins';
+@use '../main/variables';
+
+.card-filter {
+  padding: 20px 19px;
+  border-radius: 10px;
+  background: variables.$color-green-bg;
+
+  @media (min-width: variables.$break-point-lg) {
+    padding: 40px;
+  }
+
+  &__row {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

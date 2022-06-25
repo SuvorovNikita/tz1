@@ -1,0 +1,27 @@
+// Colors
+$color-body: #0b1739;
+$color-green: #3eb57c;
+$color-green-shadow: 0px 6px 20px #95d0a1;
+$color-green-bg: linear-gradient(
+  135deg,
+  rgba(174, 228, 178, 0.3) 0%,
+  rgba(149, 208, 161, 0.3) 100%
+);
+$color-white: #fff;
+$color-black: #000;
+$color-border: rgba(0, 0, 0, 0.1);
+$color-gray: #e2e2e2;
+
+// Fonts
+$font-family-base: 'PT Root UI', sans-serif;
+
+// Media Breakpoints
+$break-point-md: 960px;
+$break-point-lg: 1440px;
+
+// Grid
+$grid-point-md: 960px;
+$grid-point-lg: 1440px;
+
+// Columns
+$grid-columns: 36;
