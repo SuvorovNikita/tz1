@@ -96,7 +96,7 @@ initData();
 
 // Load more
 
-let pages = 3;
+let pages = 1;
 const loadMore = document.querySelector('[data-el="get-more-items"]');
 loadMore.addEventListener('click', function () {
   if (pages > 0) {
