@@ -21,83 +21,106 @@
                     <table class="card-list__table">
                       <thead>
                         <tr>
-                          <th>Планировка</th>
-                          <th>Квартира</th>
-                          <th>m2</th>
-                          <th>Этаж</th>
-                          <th>Цена</th>
+                          <th width="100px">
+                            <div class="data-filter data-filter--unfiltered">
+                              <div class="data-filter__title">Планировка</div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="data-filter data-filter--unfiltered">
+                              <div class="data-filter__title">Квартира</div>
+                            </div>
+                          </th>
+                          <th width="120px">
+                            <div class="data-filter data-filter--down">
+                              <div class="data-filter__title">S, м<sup>2</sup></div>
+                            </div>
+                          </th>
+                          <th width="120px">
+                            <div class="data-filter">
+                              <div class="data-filter__title">Этаж</div>
+                            </div>
+                          </th>
+                          <th width="120px">
+                            <div class="data-filter data-filter--up">
+                              <div class="data-filter__title">Цена, ₽</div>
+                            </div>
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="card-product card-product--table">
-                          <td>
-                            <div class="card-product__image">
-                              <img src="/plan.e029a575.svg" alt="">
-                            </div>
-                          </td>
-                          <td>
-                            <div class="card-product__title">3-комнатная №104</div>
-                          </td>
-                          <td>
-                            <div class="card-product__data">63,1</div>
-                          </td>
-                          <td>
-                            <div class="card-product__data">
-                              2 <span class="card-product__data-gray">из 17</span>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="card-product__data">6 630 500</div>
-                          </td>
-                        </tr>
+                        <template data-el="tpl-table-el">
+                          <tr class="card-product card-product--table">
+                            <td>
+                              <div class="card-product__image">
+                                <img alt="" data-el="image">
+                              </div>
+                            </td>
+                            <td>
+                              <div class="card-product__title" data-el="title"></div>
+                            </td>
+                            <td>
+                              <div class="card-product__data" data-el="area"></div>
+                            </td>
+                            <td>
+                              <div class="card-product__data">
+                                <span data-el="floor"></span>&nbsp;
+                                <span class="card-product__data-gray">из&nbsp;<span data-el="maxFloor"></span></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="card-product__data" data-el="price"></div>
+                            </td>
+                          </tr>
+                        </template>
                       </tbody>
                     </table>
                   </div>
                   <div class="d-none-lg">
                     <div class="card-list__filters">
-                      <div class="card-list__filter">m2</div>
-                      <div class="card-list__filter">Этаж</div>
-                      <div class="card-list__filter">Цена</div>
+                      <div class="card-list__filter">
+                        <div class="data-filter data-filter--down">
+                          <div class="data-filter__title">S, м<sup>2</sup></div>
+                        </div>
+                      </div>
+                      <div class="card-list__filter">
+                        <div class="data-filter">
+                          <div class="data-filter__title">Этаж</div>
+                        </div>
+                      </div>
+                      <div class="card-list__filter">
+                        <div class="data-filter data-filter--up">
+                          <div class="data-filter__title">Цена, ₽</div>
+                        </div>
+                      </div>
                     </div>
                     <div class="card-list__items">
-                      <div class="card-list__item">
-                        <div class="card-product card-product--list">
-                          <div class="card-product__body">
-                            <div class="card-product__title">3-комнатная №104</div>
-                            <div class="card-product__meta">
-                              <div class="card-product__data">63,1 м²</div>
-                              <div class="card-product__data">
-                                1 <span class="card-product__data-gray">из 17 этаж</span>
+                      <template data-el="tpl-card-el">
+                        <div class="card-list__item">
+                          <div class="card-product card-product--list">
+                            <div class="card-product__body">
+                              <div class="card-product__title" data-el="title"></div>
+                              <div class="card-product__meta">
+                                <div class="card-product__data" data-el="area"></div>
+                                <div class="card-product__data">
+                                  <span data-el="floor"></span>&nbsp;
+                                  <span class="card-product__data-gray">из&nbsp;<span data-el="maxFloor"></span></span>
+                                </div>
+                                <div class="card-product__data" data-el="price"></div>
                               </div>
-                              <div class="card-product__data">6 650 759 ₽</div>
+                            </div>
+                            <div class="card-product__image">
+                              <img data-el="image" alt="">
                             </div>
                           </div>
-                          <div class="card-product__image">
-                            <img src="/plan.e029a575.svg" alt="">
-                          </div>
                         </div>
-                      </div>
-                      <div class="card-list__item">
-                        <div class="card-product card-product--list">
-                          <div class="card-product__body">
-                            <div class="card-product__title">3-комнатная №104</div>
-                            <div class="card-product__meta">
-                              <div class="card-product__data">63,1 м²</div>
-                              <div class="card-product__data">
-                                1 <span class="card-product__data-gray">из 17 этаж</span>
-                              </div>
-                              <div class="card-product__data">6 650 759 ₽</div>
-                            </div>
-                          </div>
-                          <div class="card-product__image">
-                            <img src="/plan.e029a575.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
+                      </template>
                     </div>
                   </div>
                   <div class="card-list__footer">
-                    <button class="button" type="button">Загрузить еще</button>
+                    <button class="button" type="button" data-el="get-more-items">
+                      Загрузить еще
+                    </button>
                   </div>
                 </div>
               </div>
@@ -108,18 +131,26 @@
                 <div class="card-filter">
                   <div class="card-filter__inner">
                     <div class="card-filter__row">
-                      <div class="filter-button">
+                      <div class="filter-button" data-el="filter-room">
                         <div class="filter-button__item">
-                          <button class="button-circle">1к</button>
+                          <button type="button" class="button-circle" onclick="return updateData()" data-el="get-more-active">
+                            1к
+                          </button>
                         </div>
                         <div class="filter-button__item">
-                          <button class="button-circle button-circle--active">2к</button>
+                          <button type="button" class="button-circle button-circle--active" onclick="return updateData()" data-el="get-more-active">
+                            2к
+                          </button>
                         </div>
                         <div class="filter-button__item">
-                          <button class="button-circle">3к</button>
+                          <button type="button" class="button-circle" onclick="return updateData()" data-el="get-more-active">
+                            3к
+                          </button>
                         </div>
                         <div class="filter-button__item">
-                          <button class="button-circle button-circle--disabled">4к</button>
+                          <button type="button" class="button-circle button-circle--disabled" onclick="return updateData()" data-el="get-more-active">
+                            4к
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -174,6 +205,11 @@
             <div class="col-2"></div>
           </div>
         </div>
+      </div>
+      <div class="main__scroll-top">
+        <button class="button-top" type="button" onclick="return up()" data-el="scroll-top">
+          <img class="button-top__arrow" src="/arrow.da4dab08.svg" alt="">
+        </button>
       </div>
     </main>
     <script src="/index.bda4afae.js"></script>

@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "1-комнатная №103",
+      "area": "20,1 м²",
+      "floor": "1",
+      "maxFloor": "17",
+      "price": "6 650 759 ₽",
+      "image": "plan.svg"
+    },
+    {
+      "id": "2",
+      "name": "2-комнатная №104",
+      "area": "63,1 м²",
+      "floor": "1",
+      "maxFloor": "17",
+      "price": "6 650 759 ₽",
+      "image": "plan.svg"
+    },
+    {
+      "id": "3",
+      "name": "3-комнатная №105",
+      "area": "99,1 м²",
+      "floor": "1",
+      "maxFloor": "17",
+      "price": "2 650 759 ₽",
+      "image": "plan.svg"
+    },
+    {
+      "id": "4",
+      "name": "3-комнатная №109",
+      "area": "63,1 м²",
+      "floor": "1",
+      "maxFloor": "17",
+      "price": "6 650 759 ₽",
+      "image": "plan.svg"
+    },
+    {
+      "id": "5",
+      "name": "3-комнатная №111",
+      "area": "63,1 м²",
+      "floor": "1",
+      "maxFloor": "17",
+      "price": "6 650 759 ₽",
+      "image": "plan.svg"
+    },
+    {
+      "id": "6",
+      "name": "3-комнатная №112",
+      "area": "63,1 м²",
+      "floor": "1",
+      "maxFloor": "17",
+      "price": "6 650 759 ₽",
+      "image": "plan.svg"
+    }
+  ]
+}

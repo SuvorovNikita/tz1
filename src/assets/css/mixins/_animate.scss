@@ -1,0 +1,23 @@
+@use '../main/variables';
+
+@mixin animate-transition($properties...) {
+  @if length($properties) == 0 {
+    $properties: all;
+  }
+
+  @media (min-width: variables.$break-point-lg) {
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    transition-property: $properties;
+  }
+}
+
+@mixin animate-transition-no-media($properties...) {
+  @if length($properties) == 0 {
+    $properties: all;
+  }
+
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  transition-property: $properties;
+}

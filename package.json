@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "postbuild": "cp -r public/* dist/"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.6.2",

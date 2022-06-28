@@ -6,4 +6,10 @@
   @media (min-width: variables.$break-point-lg) {
     padding: 96px 80px;
   }
+
+  &__scroll-top {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+  }
 }

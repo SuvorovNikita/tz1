@@ -1,6 +1,9 @@
+@use 'sass:math';
+
 // Colors
 $color-body: #0b1739;
 $color-green: #3eb57c;
+$color-green-light: #95d0a1;
 $color-green-shadow: 0px 6px 20px #95d0a1;
 $color-green-bg: linear-gradient(
   135deg,
@@ -25,3 +28,7 @@ $grid-point-lg: 1440px;
 
 // Columns
 $grid-columns: 36;
+
+// Columns sizes
+$grid-columns-size-md: math.div($grid-point-md, $grid-columns);
+$grid-columns-size-lg: math.div($grid-point-lg, $grid-columns);

@@ -1,0 +1,45 @@
+@use '../mixins';
+@use '../main/variables';
+
+.button-top {
+  border: none;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  background-color: variables.$color-green-light;
+  cursor: pointer;
+  @include mixins.animate-transition(background-color);
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: variables.$color-green-bg;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  &:hover {
+    background-color: variables.$color-green;
+  }
+
+  &__arrow {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  &__hidden {
+    display: none;
+  }
+}
